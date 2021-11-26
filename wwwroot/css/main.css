@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  margin: 0;
+  background-color: #e5eff5;
+}
+
+body main {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 30px 0;
+}
+
+body main .container {
+  width: 90vw;
+  max-width: 635px;
+  min-height: 475px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+body main .container h1, body main .container h2, body main .container h3, body main .container p, body main .container ul {
+  margin: 0;
+  padding: 0;
+}
+
+body main .container .container__top {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 216px;
+          flex: 0 0 216px;
+  background-color: white;
+}
+
+body main .container .container__bottom {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body main .container .container__top {
+  padding: 40px 40px 0;
+}
+
+body main .container .container__top h1 {
+  font-size: 2.3rem;
+  letter-spacing: 0.03rem;
+  color: #2ab2af;
+}
+
+body main .container .container__top h2 {
+  font-size: 1.8rem;
+  letter-spacing: -0.02rem;
+  margin: 25px 0 10px;
+  color: #c0df34;
+}
+
+body main .container .container__top p {
+  font-size: 1.6rem;
+  letter-spacing: -0.016rem;
+  line-height: 2.6rem;
+  color: #98a6bd;
+}
+
+body main .container .container__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .container .container__bottom .container__left, body main .container .container__bottom .container__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 41px 40px 30px;
+}
+
+body main .container .container__bottom h3 {
+  font-size: 1.7rem;
+  letter-spacing: 0.029rem;
+  color: white;
+}
+
+body main .container .container__bottom .container__left {
+  background: #2ab2af;
+}
+
+body main .container .container__bottom .container__left label {
+  font-size: 3rem;
+  letter-spacing: 0.13rem;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 19px 0 9px;
+  color: white;
+}
+
+body main .container .container__bottom .container__left label span {
+  font-size: 1.5rem;
+  letter-spacing: 0.03rem;
+  font-weight: 400;
+  margin-left: 13px;
+  opacity: 0.5;
+}
+
+body main .container .container__bottom .container__left p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: white;
+  letter-spacing: 0.028rem;
+}
+
+body main .container .container__bottom .container__left button {
+  border: none;
+  background: #c0df34;
+  width: 100%;
+  height: 48px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  font-size: 1.4rem;
+}
+
+body main .container .container__bottom .container__right {
+  background: -webkit-gradient(linear, left top, right top, from(#4abebd), to(#4abcbd));
+  background: linear-gradient(90deg, #4abebd 0%, #4abcbd 100%);
+}
+
+body main .container .container__bottom .container__right ul {
+  margin-top: 20px;
+  color: white;
+}
+
+body main .container .container__bottom .container__right ul li {
+  list-style: none;
+  font-size: 1.4rem;
+  letter-spacing: -0.016rem;
+  line-height: 2rem;
+}
+
+@media (max-width: 710px) {
+  body main .container {
+    height: auto;
+  }
+}
+
+@media (max-width: 580px) {
+  body main .container .container__top {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 25px 30px 30px;
+  }
+  body main .container .container__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .container .container__bottom .container__left, body main .container .container__bottom .container__right {
+    padding: 25px 30px 30px;
+  }
+}

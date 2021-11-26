@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+$cyan: hsl(179, 62%, 43%);
+$yellow: hsl(71, 73%, 54%);
+$gray: hsl(204, 43%, 93%);
+$blue: hsl(218, 22%, 67%);
+
+*{box-sizing: border-box;}
+
+html{font-size: 62.5%;}
+
+body{font-family: 'Karla', sans-serif; margin: 0; background-color: $gray;
+    main{display: grid; place-items: center; min-height: 100vh; padding: 30px 0;
+        .container{width: 90vw; max-width: 635px; min-height: 475px;display: flex; flex-direction: column; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1); 
+            h1, h2, h3, p, ul{margin: 0; padding: 0;}
+            .container__top{flex:0 0 216px; background-color: white;}
+            .container__bottom{flex:1;}
+            .container__top{padding: 40px 40px 0;
+                h1{font-size: 2.3rem; letter-spacing: 0.03rem; color: $cyan;}
+                h2{font-size: 1.8rem; letter-spacing: -0.02rem; margin: 25px 0 10px; color: $yellow;}
+                p{font-size: 1.6rem; letter-spacing: -0.016rem; line-height: 2.6rem; color:$blue;}
+            }
+
+            .container__bottom{display: flex;
+                .container__left, .container__right{flex:1; padding: 41px 40px 30px;}
+                h3{font-size: 1.7rem; letter-spacing: 0.029rem; color:white;}
+                .container__left{background: $cyan;                   
+                    label{font-size: 3rem; letter-spacing: 0.13rem; font-weight: 700; display: flex; align-items: center; margin: 19px 0 9px; color:white;
+                        span{font-size: 1.5rem; letter-spacing: 0.03rem; font-weight: 400; margin-left: 13px; opacity: 0.5;}
+                    }
+                    p{font-size: 1.5rem; font-weight: 400; margin-bottom: 30px; color:white; letter-spacing: 0.028rem;}
+                    button{border: none; background: $yellow; width: 100%; height: 48px; border-radius: 5px; color:white; font-weight: 700; cursor: pointer; letter-spacing: 0.1rem; font-size: 1.4rem;}
+                }
+                .container__right{background: linear-gradient(90deg, #4abebd 0%, #4abcbd 100%);  
+                    h3{}
+                    ul{margin-top: 20px; color:white;
+                        li{list-style: none; font-size: 1.4rem; letter-spacing: -0.016rem; line-height: 2rem;}
+                    }
+                }
+            }
+            @media(max-width:710px){height: auto;}
+            @media(max-width:580px){
+                .container__top{flex:1; padding: 25px 30px 30px;}
+                .container__bottom{flex-direction: column;
+                    .container__left, .container__right{padding: 25px 30px 30px;}
+                }                
+            }
+        }
+    }
+}

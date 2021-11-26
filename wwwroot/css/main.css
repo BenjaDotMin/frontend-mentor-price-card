@@ -129,19 +129,21 @@ body main .container .container__bottom .container__left label span {
 body main .container .container__bottom .container__left p {
   font-size: 1.5rem;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   color: white;
   letter-spacing: 0.028rem;
 }
 
 body main .container .container__bottom .container__left button {
   border: none;
+  -webkit-box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.13);
+          box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.13);
   background: #c0df34;
   width: 100%;
   height: 48px;
   border-radius: 5px;
   color: white;
-  font-weight: 700;
+  font-weight: 400;
   cursor: pointer;
   letter-spacing: 0.1rem;
   font-size: 1.4rem;
